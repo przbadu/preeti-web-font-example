@@ -3,11 +3,12 @@
     src:url('Preeti.ttf.woff') format('woff'),
         url('Preeti.ttf.svg#Preeti') format('svg'),
         url('Preeti.ttf.eot'),
-        url('Preeti.ttf.eot?#iefix') format('embedded-opentype'); 
+        url('Preeti.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 .nepali-font {
   font-family: 'Preeti';
+  font-size: 1.5em;
 }
