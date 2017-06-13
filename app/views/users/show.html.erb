@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="heading"><%= t('user_information') %></h1>
+  </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <tr>
+        <td><%= t('name') %></td>
+        <td class="nepali-font"><%= @user.first_name %></td>
+      </tr>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+      <tr>
+        <td><%= t('age') %></td>
+        <td class="nepali-font"><%= @user.age %></td>
+      </tr>
 
-<p>
-  <strong>Age:</strong>
-  <%= @user.age %>
-</p>
+      <tr>
+        <td><%= t('address') %></td>
+        <td class="nepali-font"><%= @user.address %></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @user.address %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="screen">
+  <a onclick="window.print();" class="btn btn-lg btn-primary"><%= t('print') %></a>
+</div>

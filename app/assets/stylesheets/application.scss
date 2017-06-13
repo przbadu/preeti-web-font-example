@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @font-face {
     font-family: 'Preeti';
     src:url('Preeti.ttf.woff') format('woff'),
@@ -11,4 +14,14 @@
 .nepali-font {
   font-family: 'Preeti';
   font-size: 1.5em;
+}
+
+@media print {
+  .screen {
+    display: none;
+  }
+
+  .print {
+    display: block;
+  }
 }

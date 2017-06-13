@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label t("name") %>
-    <%= form.text_field :first_name, id: :user_first_name, class: 'nepali-font' %>
+    <%= form.text_field :first_name, id: :user_first_name, class: 'nepali-font form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label t('age') %>
-    <%= form.text_field :age, id: :user_age, class: 'nepali-font'  %>
+    <%= form.text_field :age, id: :user_age, class: 'nepali-font form-control'  %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label t('address') %>
-    <%= form.text_area :address, id: :user_address, class: 'nepali-font'  %>
+    <%= form.text_area :address, id: :user_address, class: 'nepali-font form-control'  %>
   </div>
 
   <div class="actions">
-    <%= form.submit t('save') %>
+    <%= form.submit t('save'), class: 'btn btn-lg btn-success' %>
   </div>
 <% end %>
