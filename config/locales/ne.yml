@@ -1,2 +1,7 @@
 ne:
   title: 'सिर्सक'
+  name: 'नाम'
+  age: 'उमेर'
+  address: 'ठेगाना'
+  new_registration: 'खाता खोल्नुहोस'
+  save: 'डाटा सुरक्षित गर्नुहोस'
